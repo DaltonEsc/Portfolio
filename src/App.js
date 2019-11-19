@@ -1,36 +1,33 @@
 import React, { Component } from 'react';
-import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './CSS/App.css';
+
+import {Navbar, Nav} from 'react-bootstrap'
 
 class App extends Component{
   render(){
     return (
-       <div className="mainWrapper">
-        <div className="basicInfo">
-          <div className = "picture">
-            <p>Place Holder for Pic</p>
-          </div>
-          <div className = "contactInfo">
-            <p>Place holder for contactInfo</p>
-          </div>
-          <div className = "skills">
-            <p>Placeholder for skills</p>
-          </div>
-        </div>
-        <div className="experience">
-        <div className = "projects">
-          <p>placeholder for projects</p>
+        <body>
+        <header>
+          <Navbar id='nav' expand="lg" >
+            <Navbar.Brand id='Brand' href="#home">Dalton's Resume</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Nav.Link className='links' href="#home">Home</Nav.Link>
+                <Nav.Link className='links' href="#link">GitHub</Nav.Link>
+                <Nav.Link className='links' href="#link">LinkedIn</Nav.Link>
+                <Nav.Link className='links' href="#link">Resume</Nav.Link>
+                <Nav.Link className='links' href="#link">about</Nav.Link>
+                <Nav.Link className='links' href="#link">experience</Nav.Link>
+                <Nav.Link className='links'  href="#link">projects</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </header>
+        </body>
 
-        </div>
-        <div className = "school">
-          <p>placeholder for school info</p>
-
-        </div>
-        <div className = "work">
-          <p>placeholder for work exp</p>
-
-        </div>
-        </div>
-       </div>
     );
   }
 }
