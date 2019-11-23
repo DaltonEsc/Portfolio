@@ -1,6 +1,6 @@
 Link to: https://daltonesc.github.io/Portfolio/
 
-##My Portfolio
+## My Portfolio
 
 This is my software development portfolio
 
