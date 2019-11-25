@@ -1,13 +1,22 @@
-#image{
+#image {
 
-    margin:5%;
+    margin: 5%;
     text-align: center;
 }
-#about{
+
+#about {
     border-radius: 10%;
     text-align: center;
 
 }
-#icons{
-    padding:5%;
+
+#icons {
+    padding: 5%;
+}
+
+#me {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+
 }

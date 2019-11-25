@@ -16,3 +16,14 @@
 .component{
     margin:10%;
 }
+
+#footer {
+    background: #5a6268;
+    text-align: center;
+    padding: 1%;
+}
+
+.links {
+    color: white;
+    margin: 3%;
+}
