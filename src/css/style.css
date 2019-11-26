@@ -1,6 +1,12 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 
+p{
+    margin-bottom:.5rem;
+    padding:.5rem;
+    color:white;
+}
+
 li {
     display: inline;
     padding: 0;
@@ -11,8 +17,11 @@ body{
     overflow-x:hidden;
     font-family: 'Lato', sans-serif;
     color:#505962;
+    min-height: 100%;
 }
-
+html{
+    height:100%;
+}
 .navbar{
     text-transform: uppercase;
     font-weight: bold;
@@ -41,7 +50,8 @@ body{
     text-transform: uppercase;
 }
 .caption h1{
-    font-size:6vw;
+    font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
     font-weight: 700;
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem .8rem black;
@@ -61,4 +71,36 @@ body{
     left: 50%;
     margin-left: -2.2rem;
     text-shadow: .1rem .1rem .8rem black;
+}
+.btn-lg{
+    border-width: medium;
+}
+.container{
+    max-width: 100%;
+}
+.offset{
+    padding-top: 4rem;
+}
+.theme-progress-bar-dark {
+    background-color: #434E5E;
+  }
+  a{
+      color:white;
+  }
+  a:hover{
+      color:white;
+  }
+  .footer .socials{
+      padding-top: 1rem;
+      padding-bottom: 5rem;
+  }
+#topoffoot{
+      padding-top: 5rem;
+      color:white;
+  }
+.white{
+    color:white;
+}
+#resume{
+    padding-bottom:10rem;
 }
