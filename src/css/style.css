@@ -5,7 +5,6 @@ li {
     display: inline;
     padding: 0;
     margin: 0;
-    text-shadow: .1rem .1rem .8rem black;
 }
 
 body{
@@ -31,6 +30,7 @@ body{
 }
 .home-inner{
     background-image: url(/assets/computers.jpg);
+    background-size:cover;
 }
 .caption{
     width:100%;
@@ -55,7 +55,7 @@ body{
 .socials-under{
     padding-bottom: 1rem;
     margin:0;
-
+    text-shadow: .1rem .1rem .8rem black;
 }
 .btn{
     position: absolute;
