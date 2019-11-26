@@ -29,7 +29,7 @@ body{
     padding: .7rem;
 }
 .home-inner{
-    background-image: url("https://github.com/DaltonEsc/Portfolio/master/assets/computers.jpg");
+    background-image: url("https://github.com/DaltonEsc/Portfolio/blob/master/assets/computers.jpg");
     background-size:cover;
 }
 .caption{
