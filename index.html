@@ -10,9 +10,24 @@
 
   <link rel="stylesheet" href="./src/css/fixed.css">
   <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/cardstyle.css">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
+  <script src="./src/js/jquery-3.3.1.min.js"></script>
+  <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      fixefont();
+      $(window).resize(function () {
+        fixefont();
+      });
+    });
+    function fixefont() {
+      var img = parseInt(document.getElementById("imgforsizing").clientHeight/15);
+      document.getElementById("textforcards").style.fontSize = img+"px"; 
+    }
+  </script>
   <!--Home Section-->
   <div id="home">
     <!--Navbar-->
@@ -81,7 +96,7 @@
           </li>
         </ul>
       </div>
-      <a class="btn btn-outline-light btn-lg" href="#resume"><i class="fas fa-arrow-down"></i></a>
+      <a class="btn btn-outline-light btn-lg" href="#projects"><i class="fas fa-arrow-down"></i></a>
     </div>
     <!--End of Landing Page-->
   </div>
@@ -90,112 +105,164 @@
 
 
   <div id="projects" class="offset">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 bg-dark">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project One</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum
-                quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum
-                tempora ex quae? Nihil, dolorem!</p>
+        <div class="col-md">
+          <div class="card" onmouseover="">
+            <div class="face face1">
+              <div class="content">
+                <img id="imgforsizing" src="/assets/computers.jpg" alt="" />
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
+                  atque sint.
+                  Commodi molestiae ab vero nesciunt voluptatibus.</p>
+                <a href="#">View Site</a>
+                <a href="#">View Code</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 bg-dark">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Two</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-                gravida pellentesque urna varius vitae.</p>
+        <div class="col-md">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <img src="/assets/computers.jpg" alt="" />
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
+                  atque sint.
+                  Commodi molestiae ab vero nesciunt voluptatibus.</p>
+                <a href="#">Read More</a>
+                <a href="#">View Code</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 bg-dark">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Three</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod
-                sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis
-                mollitia recusandae vero vel quam!</p>
+        <div class="col-md">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <img src="/assets/computers.jpg" alt="" />
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
+                  atque sint.
+                  Commodi molestiae ab vero nesciunt voluptatibus.</p>
+                <a href="#">Read More</a>
+                <a href="#">View Code</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 bg-dark">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Four</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-                gravida pellentesque urna varius vitae.</p>
+        <div class="col-md">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <img src="/assets/computers.jpg" alt="" />
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 bg-dark">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Five</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-                gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 bg-dark">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Six</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum
-                suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo
-                repellat fugiat excepturi! Nemo, esse.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 bg-dark">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Seven</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-                gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 bg-dark">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Eight</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta
-                dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur
-                accusantium, beatae qui deserunt tenetur ipsa.</p>
+            <div class="face face2">
+              <div class="content">
+                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
+                  atque sint.
+                  Commodi molestiae ab vero nesciunt voluptatibus.</p>
+                <a href="#">Read More</a>
+                <a href="#">View Code</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- /.row -->
+      <div class="row">
+        <div class="col-md">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <img src="/assets/computers.jpg" alt="" />
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
+                  atque sint.
+                  Commodi molestiae ab vero nesciunt voluptatibus.</p>
+                <a href="#">Read More</a>
+                <a href="#">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <img src="/assets/computers.jpg" alt="" />
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
+                  atque sint.
+                  Commodi molestiae ab vero nesciunt voluptatibus.</p>
+                <a href="#">Read More</a>
+                <a href="#">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <img src="/assets/computers.jpg" alt="" />
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
+                  atque sint.
+                  Commodi molestiae ab vero nesciunt voluptatibus.</p>
+                <a href="#">Read More</a>
+                <a href="#">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <img src="/assets/computers.jpg" alt="" />
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
+                  atque sint.
+                  Commodi molestiae ab vero nesciunt voluptatibus.</p>
+                <a href="#">Read More</a>
+                <a href="#">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.container -->
   </div>
 
   <div id="resume" class="offset">
@@ -309,35 +376,34 @@
   <div id="contact" class="offset">
     <div class="footer">
       <div class="row justify-content-center bg-dark">
-        <div class = "col-md-5 text-center">
-                <h1 id="topoffoot">Dalton's Portfolio</h1>
-                <h4 class="white">Software Developer</h4>
-                <p id="topoffoot">Thank you for visiting my page! If you'd like to get in touch, feel free to contact me with the info below.</p>
-                <strong style="color: white;">Contact Info</strong>
-                <p>(281)-723-4004 <br/>eschberger.dalton@gmail.com</p>
-                <div class="socials">
-                    <ul class="socialList">
-                      <li class="navbar-item">
-                        <a class="navbar-brand" href="https://github.com/DaltonEsc" target="_blank"><i
-                            class="fab fa-github fa-2x"></i></a>
-                      </li>
-                      <li class="navbar-item">
-                        <a class="navbar-brand" href="https://www.linkedin.com/in/dalton-e-b6368aa5/" target="_blank"><i
-                            class="fab fa-linkedin fa-2x"></i></a>
-                      </li>
-                      <li class="navbar-item">
-                        <a class="navbar-brand" href="https://www.hackerrank.com/DaltonEsc" target="_blank"><i
-                            class="fab fa-hackerrank fa-2x"></i></a>
-                      </li>
-                    </ul>
-                </div>
+        <div class="col-md-5 text-center">
+          <h1 id="topoffoot">Dalton's Portfolio</h1>
+          <h4 class="white">Software Developer</h4>
+          <p id="topoffoot">Thank you for visiting my page! If you'd like to get in touch, feel free to contact me with
+            the info below.</p>
+          <strong style="color: white;">Contact Info</strong>
+          <p>(281)-723-4004 <br />eschberger.dalton@gmail.com</p>
+          <div class="socials">
+            <ul class="socialList">
+              <li class="navbar-item">
+                <a class="navbar-brand" href="https://github.com/DaltonEsc" target="_blank"><i
+                    class="fab fa-github fa-2x"></i></a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-brand" href="https://www.linkedin.com/in/dalton-e-b6368aa5/" target="_blank"><i
+                    class="fab fa-linkedin fa-2x"></i></a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-brand" href="https://www.hackerrank.com/DaltonEsc" target="_blank"><i
+                    class="fab fa-hackerrank fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="./src/js/jquery-3.3.1.min.js"></script>
-  <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

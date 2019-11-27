@@ -1,10 +1,10 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 
-p{
-    margin-bottom:.5rem;
-    padding:.5rem;
-    color:white;
+.footer p {
+    margin-bottom: .5rem;
+    padding: .5rem;
+    color: white;
 }
 
 li {
@@ -13,43 +13,50 @@ li {
     margin: 0;
 }
 
-body{
-    overflow-x:hidden;
+body {
+    overflow-x: hidden;
     font-family: 'Lato', sans-serif;
-    color:#505962;
+    color: #505962;
     min-height: 100%;
 }
-html{
-    height:100%;
+
+html {
+    height: 100%;
 }
-.navbar{
+
+.navbar {
     text-transform: uppercase;
     font-weight: bold;
-    font-size:.9rem;
+    font-size: .9rem;
     letter-spacing: .1rem;
-    background:rgba(0,0,0,0.6)!important;
+    background: rgba(0, 0, 0, 0.6) !important;
 }
-.socials{
-    height:2rem;
+
+.socials {
+    height: 2rem;
     padding-left: 2rem;
     letter-spacing: .5rem;
 }
-.navbar-nav li{
+
+.navbar-nav li {
     padding: .7rem;
 }
-.home-inner{
+
+.home-inner {
     background-image: url("https://raw.githubusercontent.com/DaltonEsc/Portfolio/master/assets/computers.jpg");
-    background-size:cover;
+    background-size: cover;
 }
-.caption{
-    width:100%;
+
+.caption {
+    width: 100%;
     position: absolute;
     top: 38%;
     z-index: 1;
-    color:white;
+    color: white;
     text-transform: uppercase;
 }
-.caption h1{
+
+.caption h1 {
     font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     line-height: calc(1em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
     font-weight: 700;
@@ -58,49 +65,62 @@ html{
     padding-bottom: 1rem;
 
 }
-.socialList{
+
+.socialList {
     padding-left: 0%;
 }
-.socials-under{
+
+.socials-under {
     padding-bottom: 1rem;
-    margin:0;
+    margin: 0;
     text-shadow: .1rem .1rem .8rem black;
 }
-.btn{
+
+.btn {
     position: absolute;
     left: 50%;
     margin-left: -2.2rem;
     text-shadow: .1rem .1rem .8rem black;
 }
-.btn-lg{
+
+.btn-lg {
     border-width: medium;
 }
-.container{
+
+.container {
     max-width: 100%;
 }
-.offset{
+
+.offset {
     padding-top: 4rem;
 }
+
 .theme-progress-bar-dark {
     background-color: #434E5E;
-  }
-  a{
-      color:white;
-  }
-  a:hover{
-      color:white;
-  }
-  .footer .socials{
-      padding-top: 1rem;
-      padding-bottom: 5rem;
-  }
-#topoffoot{
-      padding-top: 5rem;
-      color:white;
-  }
-.white{
-    color:white;
 }
-#resume{
-    padding-bottom:10rem;
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.footer .socials {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+#topoffoot {
+    padding-top: 5rem;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+#resume {
+    padding-bottom: 10rem;
 }
