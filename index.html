@@ -6,29 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/a103e8abeb.js" crossorigin="anonymous"></script>
+  <script src="./src/js/jquery-3.3.1.min.js"></script>
+  <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
-
   <link rel="stylesheet" href="./src/css/fixed.css">
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="./src/css/cardstyle.css">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
-  <script src="./src/js/jquery-3.3.1.min.js"></script>
-  <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      fixefont();
-      $(window).resize(function () {
-        fixefont();
-      });
-    });
-    function fixefont() {
-      var img = parseInt(document.getElementById("imgforsizing").clientHeight/15);
-      document.getElementById("textforcards").style.fontSize = img+"px"; 
-      document.getElementById("buttonforcards").style.fontSize = img+"px"; 
-    }
-  </script>
+
   <!--Home Section-->
   <div id="home">
     <!--Navbar-->
@@ -109,20 +96,21 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md">
-          <div class="card" onmouseover="">
+          <div class="card">
             <div class="face face1">
               <div class="content">
-                <img id="imgforsizing" src="https://raw.githubusercontent.com/DaltonEsc/Portfolio/master/assets/computers.jpg" alt="" />
+                <img id="imgforsizing"
+                  src="https://raw.githubusercontent.com/DaltonEsc/Portfolio/master/assets/computers.jpg" alt="" />
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p id="textforcards1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
                   atque sint.
                   Commodi molestiae ab vero nesciunt voluptatibus.</p>
-                <a id="buttonforcards" href="#">View Site</a>
-                <a id="buttonforcards" href="#">View Code</a>
+                <a id="viewsite1" href="#">View Site</a>
+                <a id="viewcode1" href="#">View Code</a>
               </div>
             </div>
           </div>
@@ -136,12 +124,12 @@
             </div>
             <div class="face face2">
               <div class="content">
-                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p id="textforcards2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
                   atque sint.
                   Commodi molestiae ab vero nesciunt voluptatibus.</p>
-                <a id="buttonforcards" href="#">Read More</a>
-                <a id="buttonforcards" href="#">View Code</a>
+                <a id="viewsite2" href="#">Read More</a>
+                <a id="viewcode2" href="#">View Code</a>
               </div>
             </div>
           </div>
@@ -155,12 +143,12 @@
             </div>
             <div class="face face2">
               <div class="content">
-                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p id="textforcards3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
                   atque sint.
                   Commodi molestiae ab vero nesciunt voluptatibus.</p>
-                <a id="buttonforcards" href="#">Read More</a>
-                <a id="buttonforcards" href="#">View Code</a>
+                <a id="viewsite3" href="#">Read More</a>
+                <a id="viewcode3" href="#">View Code</a>
               </div>
             </div>
           </div>
@@ -174,12 +162,12 @@
             </div>
             <div class="face face2">
               <div class="content">
-                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p id="textforcards4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
                   atque sint.
                   Commodi molestiae ab vero nesciunt voluptatibus.</p>
-                <a id="buttonforcards" href="#">Read More</a>
-                <a id="buttonforcards" href="#">View Code</a>
+                <a id="viewsite4" href="#">Read More</a>
+                <a id="viewcode4" href="#">View Code</a>
               </div>
             </div>
           </div>
@@ -195,12 +183,12 @@
             </div>
             <div class="face face2">
               <div class="content">
-                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p id="textforcards5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
                   atque sint.
                   Commodi molestiae ab vero nesciunt voluptatibus.</p>
-                <a id="buttonforcards" href="#">Read More</a>
-                <a id="buttonforcards" href="#">View Code</a>
+                <a id="viewsite5" href="#">Read More</a>
+                <a id="viewcode5" href="#">View Code</a>
               </div>
             </div>
           </div>
@@ -214,12 +202,12 @@
             </div>
             <div class="face face2">
               <div class="content">
-                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p id="textforcards6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
                   atque sint.
                   Commodi molestiae ab vero nesciunt voluptatibus.</p>
-                <a id="buttonforcards" href="#">Read More</a>
-                <a id="buttonforcards" href="#">View Code</a>
+                <a id="viewsite6" href="#">Read More</a>
+                <a id="viewcode6" href="#">View Code</a>
               </div>
             </div>
           </div>
@@ -233,12 +221,12 @@
             </div>
             <div class="face face2">
               <div class="content">
-                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p id="textforcards7">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
                   atque sint.
                   Commodi molestiae ab vero nesciunt voluptatibus.</p>
-                <a id="buttonforcards" href="#">Read More</a>
-                <a id="buttonforcards" href="#">View Code</a>
+                <a id="viewsite7" href="#">Read More</a>
+                <a id="viewcode7" href="#">View Code</a>
               </div>
             </div>
           </div>
@@ -252,12 +240,12 @@
             </div>
             <div class="face face2">
               <div class="content">
-                <p id="textforcards">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p id="textforcards8">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   In dignissimos non impedit consectetur modi? Ex officia dolores corrupti eius quas, facere magni
                   atque sint.
                   Commodi molestiae ab vero nesciunt voluptatibus.</p>
-                <a id="buttonforcards" href="#">Read More</a>
-                <a id="buttonforcards" href="#">View Code</a>
+                <a id="viewsite8" href="#">Read More</a>
+                <a id="viewcode8" href="#">View Code</a>
               </div>
             </div>
           </div>
@@ -265,7 +253,6 @@
       </div>
     </div>
   </div>
-
   <div id="resume" class="offset">
     <div class="container">
       <div class="row">
@@ -383,7 +370,7 @@
           <p id="topoffoot">Thank you for visiting my page! If you'd like to get in touch, feel free to contact me with
             the info below.</p>
           <strong style="color: white;">Contact Info</strong>
-          <p>(281)-723-4004 <br />eschberger.dalton@gmail.com</p>
+          <p>(281)-723-4004<br />eschberger.dalton@gmail.com</p>
           <div class="socials">
             <ul class="socialList">
               <li class="navbar-item">
@@ -404,7 +391,23 @@
       </div>
     </div>
   </div>
+  <script>
+    fixefont();
+    $(window).resize(function () {
+      fixefont();
+    });
 
+    function fixefont() {
+
+      var img = parseInt(document.getElementById("imgforsizing").clientHeight / 15);
+
+      for (var i = 1; i <= 8; i++) {
+        document.getElementById("textforcards" + i).style.fontSize = img + "px";
+        document.getElementById("viewsite" + i).style.fontSize = img + "px";
+        document.getElementById("viewcode" + i).style.fontSize = img + "px";
+      }
+    }
+  </script>
 
 </body>
 
