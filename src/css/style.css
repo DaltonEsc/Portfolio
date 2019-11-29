@@ -1,5 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
-
+.footer h4{
+    margin-bottom: 5%;
+}
 
 .footer p {
     margin-bottom: .5rem;
@@ -123,4 +125,7 @@ a:hover {
 
 #resume {
     padding-bottom: 10rem;
+}
+.footbutton{
+    border:3px solid white;
 }
